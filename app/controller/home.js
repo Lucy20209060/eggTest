@@ -12,7 +12,6 @@ class HomeController extends Controller {
   }
 
   async downloadImage() {
-    console.log(11111)
     const url = 'http://cdn2.ettoday.net/images/1200/1200526.jpg';
     const res = await this.ctx.curl(url, {
       streaming: true,
